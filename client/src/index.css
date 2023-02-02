@@ -122,7 +122,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
+  
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -149,6 +149,5 @@ button {
 }
 
 form img {
-  width: 30px;
-  height: 30px;
+ 
 }
