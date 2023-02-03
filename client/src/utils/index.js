@@ -1,4 +1,6 @@
+import FileSaver from 'file-saver'
 import { surpriseMePrompts } from '../constants'
+
 
 {/* Fonction qui retourne un prompt aléatoire à partir d'une liste de prompts donnée "surpriseMePrompts".
  Il calcule un index aléatoire en utilisant Math.random() et Math.floor,
@@ -13,4 +15,8 @@ export function getRandomPrompt(prompt) {
     if (randomPrompt === prompt) return getRandomPrompt(prompt)
 
     return randomPrompt;
+}
+
+export async function downloadImage(_id, photo) {
+    FileSaver.saveAs(photo, `download-${_id}.jpg`)
 }
